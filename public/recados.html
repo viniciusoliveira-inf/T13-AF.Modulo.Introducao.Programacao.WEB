@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/recados.css">
+    <title>RecadOS</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1 id="tituloNome"></h1>
+        </div>
+        <div class="sair">
+            <button id="sairBotao">Sair</button>
+        </div>
+    </header>
+    <main>
+        <div class="entrada-dados">
+            <form class="form" id="formRecados">
+                <input type="text" id="textoDescricao" placeholder="Insira a descrição" autofocus>
+                <input type="text" id="textoDetalhamento" placeholder="Insira o detalhamento">
+                <button type="submit" class="btn" id="salvarBotao">Salvar</button>
+            </form>
+        </div>
+        <div class="tabela-dados">
+            <table>
+                <thead>
+                    <tr id="cabecalho-tabela">
+                        <th class="col1">#</th>
+                        <th class="col2">Descrição</th>
+                        <th class="col3">Detalhamento</th>
+                        <th class="col4">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="localRecados"></tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="assets/js/recados.js"></script>
+</body>
+
+</html>

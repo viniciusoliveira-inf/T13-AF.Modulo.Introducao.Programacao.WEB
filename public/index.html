@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>RecadOS</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-parent" id="formEntrada">
+            <div class="sign-in-img"></div>
+            <div class="form-container">
+                <form class="form" id="sign-in-form">
+                    <h1 class="title">Login</h1>
+                    <div class="fields">
+                        <input type="email" name="entradaEmail" id="entradaEmail" placeholder="Insira seu e-mail" required>
+                        <input type="password" name="entradaSenha" id="entradaSenha" placeholder="Insira sua senha" required>
+                        <button type="submit" class="btn" id="entradaBotao">Acessar Sistema</button>
+                        <p id="entradaOpcao" class="entradaOpcao" onclick="window.location.href='usuario.html';">Ainda
+                            não tem cadastrado?</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

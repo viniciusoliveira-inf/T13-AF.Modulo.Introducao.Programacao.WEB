@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #171717;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    height: 80px;
+}
+
+.titulo {
+    float: left;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+#sairBotao {
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+    width: 15vw;
+    background: #463f3f;
+    padding: 10px 5px;
+    font-size: 15px;
+    color: #beb8b8;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+main {
+    margin: auto;
+    width: 95vw;
+    min-height: calc(95vh - 90px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.entrada-dados {
+    padding: 10px 0 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.form input {
+    width: calc(70vw/2);
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    transition: 1s;
+}
+
+#textoDescricao {
+    flex: 3;
+}
+
+#textoDetalhamento {
+    flex: 4;
+}
+
+#salvarBotao {
+    flex: 1;
+    padding: 10px 5px;
+    width: 10%;
+    background: #463f3f;
+    color: #dbd5d5;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tabela-dados {
+    text-align: center;
+}
+
+.tabela-dados table {
+    border: 1px solid #353232;
+    display: inline-block;
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+}
+
+#cabecalho-tabela {
+    font-size: 14px;
+    opacity: 1;
+}
+
+tr:nth-child(even) {
+    background-color: #efefef83;
+}
+
+.tabela-dados th {
+    height: 30px;
+    border-bottom: 1px solid #999;
+    background-color: #555;
+    color: #fff;
+}
+
+.col1 {
+    width: 20vw;
+}
+
+.col2 {
+    width: 30vw;
+}
+
+.col3 {
+    width: 30vw;
+}
+
+.col4 {
+    width: 20vw;
+}
+
+.botaoEditar,
+.botaoExcluir {
+    background: #463f3f;
+    padding: 10px 15px;
+    color: #beb8b8;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.botaoExcluir,
+#salvarBotao,
+#textoDetalhamento {
+    margin-left: 10px;
+}
+
+#sairBotao:hover,
+#salvarBotao:hover,
+input:focus {
+    background: #000;
+    color: #fff;
+}
+
+#salvarBotao:hover,
+.botaoEditar:hover {
+    background: #3c31d4;
+    color: #fff;
+}
+
+.botaoExcluir:hover {
+    background: #c94b4b;
+    color: #fff;
+}
